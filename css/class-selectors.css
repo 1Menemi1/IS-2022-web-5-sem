@@ -167,6 +167,7 @@
     color: #ffffff;
 }
 
-.drop-shadow-filter {
+.picture-with-drop-shadow-filter {
+    width: 95%;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
