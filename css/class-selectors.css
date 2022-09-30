@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 
-.avatar-container {
+.site-header {
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -47,24 +47,13 @@
 
 .content-menu {
     margin-top: 30px;
+    height: max-content;
     width: 70%;
     padding: 15px;
     border: 5px solid rgba(122, 98, 63, 1);
     border-radius: 1.5em;
     color: #ffffff;
     background-color: rgba(239, 151, 44, 1);
-}
-
-@media (min-width: 960px) {
-    .content-menu {
-        margin-top: 30px;
-        width: 70%;
-        padding: 15px;
-        border: 5px solid rgba(122, 98, 63, 1);
-        border-radius: 1.5em;
-        color: #ffffff;
-        background-color: #0099ef;
-    }
 }
 
 .navigation a {
@@ -182,4 +171,89 @@
 .picture-with-drop-shadow-filter {
     width: 95%;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (max-width: 800px) {
+    .display-hidden-max-width-800 {
+        display: none;
+    }
+}
+
+.display-block-max-width-800 {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .display-block-max-width-800 {
+        display: block;
+    }
+}
+
+.grid-container {
+    display: grid;
+    border: 3px solid rgba(122, 98, 63, 1);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 2fr);
+
+    grid-template-areas:
+    "Heading    Heading     Heading     Heading"
+    "heading1   heading2    heading3    heading4"
+    "Odd1       o1          o2          o3"
+    "Even2      e4          e5          e6"
+    "Odd3       o7          o8          o9"
+    "Even4      e10         e11         e12"
+    "Odd5       o13         o14         o15";
+}
+
+.header-cell {
+    border: 3px solid rgba(122, 98, 63, 1);
+}
+
+.common-cell {
+    border: 1px solid rgba(122, 98, 63, 1);
+    padding: 7px;
+}
+
+[class^="heading"] {
+    display: grid;
+    place-items: center;
+    background-color: rgba(211, 211, 211, 0.4);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+[class^="Odd"], [class^="Even"], [class^="odd"], [class^="even"] {
+    display: grid;
+    align-content: center;
+    place-items: center;
+}
+
+[class^="Odd"], [class^="Even"] {
+    place-items: end;
+    align-content: center;
+    font-style: italic;
+}
+
+[class^="Odd"], [class^="odd"] {
+    background-color: rgba(211, 211, 211, 0.2);
+}
+
+.Heading {
+    grid-area: Heading;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    background-color: rgba(211, 211, 211, 0.6);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 800px) {
+    .display-hidden-max-width-800 {
+        display: none;
+    }
+}
+
+.horizontal-text-align {
+    text-align: center
 }
