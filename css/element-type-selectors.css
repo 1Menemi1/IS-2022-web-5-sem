@@ -35,6 +35,13 @@ h4 {
     font-size: 18px;
 }
 
+h1 a {
+    font-family: "Calibri", serif;
+    color: #222222;
+    text-decoration-line: none;
+    line-height: normal;
+}
+
 a {
     color: #0099ef;
     text-decoration-line: underline;
