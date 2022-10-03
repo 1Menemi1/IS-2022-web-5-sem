@@ -179,6 +179,12 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .display-hidden-max-width-900 {
+        display: none;
+    }
+}
+
 .display-block-max-width-800 {
     display: none;
 }
@@ -246,12 +252,6 @@
     background-color: rgba(211, 211, 211, 0.6);
     font-size: 35px;
     font-weight: bolder;
-}
-
-@media screen and (max-width: 800px) {
-    .display-hidden-max-width-800 {
-        display: none;
-    }
 }
 
 .horizontal-text-align {
