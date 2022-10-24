@@ -328,3 +328,9 @@
 .horizontal-text-align {
     text-align: center
 }
+
+#load-time {
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
+}
