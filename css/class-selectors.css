@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 
-.avatar-container {
+.site-header {
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@
 
 .content-menu {
     margin-top: 30px;
+    height: max-content;
     width: 70%;
     padding: 15px;
     border: 5px solid rgba(122, 98, 63, 1);
@@ -82,7 +83,7 @@
     color: #ffffff;
     background-color: rgba(239, 151, 44, 1);
     cursor: pointer;
-    font-family: "NAMU 1750", serif;
+    font-family: "Calibri", serif;
     font-size: 25px;
     line-height: normal;
 }
@@ -129,6 +130,7 @@
 
 .dropdown-content a:hover {
     background-color: rgba(239, 130, 44, 1);
+    border-radius: 10px;
 }
 
 .show {
@@ -170,4 +172,159 @@
 .picture-with-drop-shadow-filter {
     width: 95%;
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.display-block-max-width-890 {
+    display: none;
+}
+
+@media screen and (max-width: 890px) {
+    .display-block-max-width-890 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-menu-max-width-1200 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content-menu {
+        width: 95%;
+    }
+
+    .dropdown {
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        width: auto;
+    }
+
+    .dropdown-content li {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown-content li {
+        display: list-item;
+    }
+}
+
+.grid-container {
+    display: grid;
+    min-height: 400px;
+    border: 3px solid rgba(122, 98, 63, 1);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 2fr);
+
+    grid-template-areas:
+    "Heading        Heading         Heading         Heading"
+    "heading1       heading2        heading2        heading2"
+    "heading1       makaka1         makaka2         makaka3"
+    "odd-Cell1      odd-cell21      odd-cell31      odd-cell41"
+    "even-Cell12    even-Cell       even-Cell       even-Cell"
+    "odd-Cell13     odd-cell23      odd-cell33      odd-cell43"
+    "even-Cell14    even-cell24     even-cell34     even-cell44"
+    "odd-Cell15     odd-cell25      odd-cell35      odd-cell45";
+}
+
+.Heading {
+    grid-area: Heading;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    background-color: rgba(211, 211, 211, 0.6);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.heading1 {
+    grid-area: heading1;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    background-color: rgba(211, 211, 211, 0.6);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.heading2 {
+    grid-area: heading2;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    background-color: rgba(211, 211, 211, 0.6);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.even-Cell {
+    grid-area: even-Cell;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+}
+
+.header-cell {
+    display: grid;
+    border: 3px solid rgba(122, 98, 63, 1);
+}
+
+.common-cell {
+    display: grid;
+    align-content: center;
+    place-items: center;
+    border: 1px solid rgba(122, 98, 63, 1);
+    padding: 7px;
+}
+
+[class^="makaka"] {
+    display: grid;
+    place-items: center;
+    background-color: rgba(211, 211, 211, 0.4);
+    font-style: italic;
+}
+
+[class^="odd-Cell1"], [class^="even-Cell1"] {
+    display: grid;
+    place-items: end;
+    align-content: center;
+    font-style: italic;
+}
+
+[class^="odd-"] {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+@media screen and (max-width: 500px) {
+    .display-hidden-max-width-500 {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .display-hidden-max-width-890 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .display-hidden-max-width-1000 {
+        display: none;
+    }
+}
+
+.horizontal-text-align {
+    text-align: center
 }

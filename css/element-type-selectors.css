@@ -7,7 +7,7 @@ body {
     padding: 0 30px;
     font-size: 20px;
     line-height: 26px;
-    font-family: "Calibri", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #222222;
 }
 
@@ -15,7 +15,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "NAMU 1750", serif;
+    font-family: "Open Sans", serif;
     line-height: normal;
 }
 
@@ -33,6 +33,13 @@ h3 {
 
 h4 {
     font-size: 18px;
+}
+
+h1 a {
+    font-family: "Open Sans", serif;
+    color: #222222;
+    text-decoration-line: none;
+    line-height: normal;
 }
 
 a {
@@ -96,4 +103,8 @@ pre {
 
 blockquote p {
     text-transform: capitalize;
+}
+
+footer a {
+    text-decoration: none;
 }
