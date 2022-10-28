@@ -12,12 +12,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main-menu-container {
     height: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .site-header {
@@ -25,6 +27,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navigation-menu {
+    height: max-content;
+    border: 5px solid rgba(122, 98, 63, 1);
+    border-radius: 1em;
+    text-align: center;
+    background-color: #ef972c;
+    color: #ffffff;
+    flex: 0 0 auto;
 }
 
 .avatar {
@@ -46,9 +58,8 @@
 }
 
 .content-menu {
-    margin-top: 30px;
-    height: max-content;
-    width: 70%;
+    width: 75%;
+    min-height: 100%;
     padding: 15px;
     border: 5px solid rgba(122, 98, 63, 1);
     border-radius: 1.5em;
@@ -95,7 +106,7 @@
 .dropdown {
     position: relative;
     text-align: right;
-    display: inline-block;
+    display: none;
 }
 
 .dropdown-content {
@@ -110,13 +121,17 @@
 }
 
 .dropdown-content a {
-    width: 100%;
+    width: 100px;
     color: white;
     padding-top: 12px;
     padding-bottom: 12px;
     margin: 4px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
 }
 
 .dropdown-content ul {
@@ -130,7 +145,6 @@
 
 .dropdown-content a:hover {
     background-color: rgba(239, 130, 44, 1);
-    border-radius: 10px;
 }
 
 .show {
@@ -194,12 +208,28 @@
         width: 95%;
     }
 
+    .navigation-menu {
+        display: none;
+    }
+
     .dropdown {
+        display: inline-block;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .dropdown-content a {
         width: auto;
+    }
+
+    .dropdown-content ul {
+        display: flex;
+    }
+
+    @media screen and (max-width: 750px) {
+        .dropdown-content ul {
+            flex-direction: column;
+        }
     }
 
     .dropdown-content li {
