@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="js/page-load-time.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/highlight-active-page.js"></script>
 </head>
 
 <body>
@@ -86,8 +88,9 @@ int main()
                     Daniil</p>
             </section>
 
-            <nav class="navigation-menu">
+            <nav id="navigation-bar" class="navigation-menu">
                 <ul>
+                    <li><a href="index.html">Main</a></li>
                     <li><a href="first-lab.html">Lab-1</a></li>
                     <li><a href="second-lab.html">Lab-2</a></li>
                     <li><a href="third-lab.html">Lab-3</a></li>
@@ -101,6 +104,7 @@ int main()
                 <button onclick="myFunction()" class="dropbtn">Навигация</button>
                 <div id="myDropdown" class="dropdown-content">
                     <ul>
+                        <li><a href="index.html">Main</a></li>
                         <li><a href="first-lab.html">Lab-1</a></li>
                         <li><a href="second-lab.html">Lab-2</a></li>
                         <li><a href="third-lab.html">Lab-3</a></li>

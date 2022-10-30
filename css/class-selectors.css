@@ -39,6 +39,12 @@
     flex: 0 0 auto;
 }
 
+#navigation-bar .active,
+#myDropdown .active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .avatar {
     border: 5px solid rgba(122, 98, 63, 1);
     border-radius: 1.5em;
@@ -65,6 +71,12 @@
     border-radius: 1.5em;
     color: #ffffff;
     background-color: rgba(239, 151, 44, 1);
+}
+
+#content-menu-without-design {
+    border-radius: 0;
+    padding: 0;
+    background-color: white;
 }
 
 .navigation a {
