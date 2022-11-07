@@ -41,7 +41,6 @@
 
 #navigation-bar .active,
 #myDropdown .active {
-    /*text-decoration: underline;*/
     background-color: rgba(239, 130, 44, 1);
     border-radius: 1em;
     font-weight: bold;
