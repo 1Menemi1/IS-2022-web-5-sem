@@ -1,12 +1,14 @@
-(function () {
-    let startTime = new Date().getTime();
+function timeCalculation() {
+    let loadTime = window.performance.getEntriesByType("navigation");
+    return `Load time: ${Math.round(loadTime[0].domComplete)}ms`;
+}
 
-    function loaded() {
-        let element = document.getElementById("load-time")
-        let currTime = new Date().getTime();
-        let pgLoadTime = (currTime - startTime);
-        element.innerHTML += 'Load time: ' + pgLoadTime + "ms";
-    }
+function printLoadTimeText() {
+    let element = document.getElementById("load-time");
+    let text = document.createTextNode(timeCalculation());
+    element.appendChild(text);
+}
 
-    document.addEventListener("DOMContentLoaded", _ => {loaded()})
-})();
+window.addEventListener('load', () => printLoadTimeText());
+document.addEventListener('DOMContentLoaded', () => setUpSubmitHandlers())
+document.addEventListener('DOMContentLoaded', () => setUpActionHandlers())
