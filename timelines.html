@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>MAKAKINO</title>
+  <meta name="description" content="Социальная сеть для владельцев макак">
+  <meta name="keywords" content="социальная сеть, владелец, хозяин, макака, социальная сеть для владельцев макак">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="pictures/nft%20обезьяна.png">
+  <link rel="stylesheet" href="css/class-selectors.css">
+  <link rel="stylesheet" href="css/element-type-selectors.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="js/page-load-time.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/highlight-active-page.js"></script>
+  <link rel="stylesheet" href="bower_components/timesheet.js/dist/timesheet.min.css">
+  <script src="bower_components/timesheet.js/dist/timesheet.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="content">
+    <header class="site-header">
+      <a href="index.html"><img class="avatar display-hidden-max-width-890" src="pictures/nft%20обезьяна.png"
+                                alt="Аватарка"></a>
+      <div class="header-text-block">
+        <h1><a href="index.html">MAKAKINO</a></h1>
+      </div>
+      <div>
+        <a onclick="myFunction()" href="authorization.html" class="display-hidden-max-width-890"><img
+                class="auth-button" src="pictures/auth.png" alt="Кнопка авторизации"></a>
+      </div>
+    </header>
+
+    <main class="main-menu-container main-menu-max-width-1200">
+      <section class="content-menu">
+        <span id="load-time"></span>
+        <div id="timesheet1"></div>
+        <div id="timesheet2"></div>
+        <div id="timesheet3"></div>
+        <div id="timesheet4"></div>
+      </section>
+
+      <nav id="navigation-bar" class="navigation-menu">
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="first-lab.html">Lab-1</a></li>
+          <li><a href="second-lab.html">Lab-2</a></li>
+          <li><a href="third-lab.html">Lab-3</a></li>
+          <li><a href="meeting-place-map.html">Карта</a></li>
+          <li><a href="forum.html">Форум</a></li>
+          <li><a href="feedback.html">Фидбек</a></li>
+          <li><a href="timelines.html">История</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Навигация</button>
+        <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="first-lab.html">Lab-1</a></li>
+            <li><a href="second-lab.html">Lab-2</a></li>
+            <li><a href="third-lab.html">Lab-3</a></li>
+            <li><a href="meeting-place-map.html">Карта</a></li>
+            <li><a href="forum.html">Форум</a></li>
+            <li><a href="feedback.html">Фидбек</a></li>
+            <li><a href="timelines.html">История</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer display-hidden-max-width-500">
+    <p>Социальная сеть для владельцев макак</p>
+    <span class="display-hidden-max-width-890">
+            <p>|</p>
+            <p><a href="https://t.me/Menemi" target="_blank">Telegram</a></p>
+            <p>|</p>
+            <p><a href="https://github.com/1Menemi1" target="_blank">Github</a></p>
+            <p>|</p>
+            <p><a href="https://www.twitch.tv/1menemi1" target="_blank">Twitch</a></p>
+            <span class="display-hidden-max-width-1000">
+                <p>|</p>
+                <p>© Menemi, 2022</p>
+            </span>
+        </span>
+  </footer>
+</div>
+
+<script>
+  new Timesheet('timesheet1', 2020, 2024,
+          [
+            ['09/2020', '05/2021', 'Дискретка', 'lorem'],
+            ['09/2020', '05/2021', 'Алгосы', 'ipsum'],
+            ['09/2020', '05/2021', 'Линал', 'dolor'],
+            ['09/2020', '12/2021', 'Матан', 'default'],
+            ['09/2020', '12/2020', 'ЦК', 'sit'],
+            ['09/2020', '05/2022', 'Английский', 'lorem'],
+            ['09/2020', '05/2021', 'Прога', 'ipsum'],
+            ['09/2020', '05/2024', 'Физра', 'dolor'],
+            ['09/2020', '12/2020', 'ЭВМ', 'default'],
+            ['02/2021', '05/2022', 'Физика', 'sit']
+          ]);
+  new Timesheet('timesheet2', 2021, 2021,
+          [
+            ['09/2021', '12/2021', 'Оси', 'lorem'],
+            ['09/2021', '12/2021', 'Теорвер', 'ipsum'],
+            ['09/2021', '12/2021', 'ООП', 'dolor'],
+            ['09/2021', '12/2021', 'История', 'default'],
+            ['09/2021', '12/2021', 'БЖД', 'sit'],
+            ['09/2021', '12/2021', 'ОГНП', 'lorem']
+          ]);
+  new Timesheet('timesheet3', 2021, 2022,
+          [
+            ['02/2021', '12/2022', 'Примат', 'ipsum'],
+            ['02/2022', '05/2022', 'Элтех', 'dolor'],
+            ['02/2022', '05/2022', 'БД', 'default'],
+            ['02/2022', '05/2022', 'Матстат', 'sit'],
+            ['02/2022', '05/2022', 'Java', 'lorem'],
+          ]);
+  new Timesheet('timesheet4', 2022, 2023,
+          [
+            ['09/2022', '12/2022', 'ML', 'ipsum'],
+            ['09/2022', '05/2023', 'Английский в проф деятельности', 'dolor'],
+            ['09/2022', '12/2022', 'Администрирование OC Windows Server', 'default'],
+            ['09/2022', '12/2022', 'Графика', 'sit'],
+            ['09/2022', '05/2023', 'Web', 'lorem']
+          ]);
+</script>
+</body>
+</html>
