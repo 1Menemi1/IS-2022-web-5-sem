@@ -265,6 +265,22 @@
     }
 }
 
+@media screen and (max-width: 850px) {
+    .display-none-max-width-850 {
+        display: none;
+    }
+}
+
+.display-block-max-width-850 {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .display-block-max-width-850 {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .dropdown-content li {
         display: list-item;

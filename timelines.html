@@ -15,6 +15,8 @@
     <script src="js/page-load-time.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/highlight-active-page.js"></script>
+    <link rel="stylesheet" href="bower_components/timesheet.js/dist/timesheet.min.css">
+    <script src="bower_components/timesheet.js/dist/timesheet.min.js"></script>
 </head>
 
 <body>
@@ -35,44 +37,17 @@
         <main class="main-menu-container main-menu-max-width-1200">
             <section class="content-menu">
                 <span id="load-time"></span>
-                <div class="display-block-max-width-890">
+                <div class="display-none-max-width-850">
+                    <div id="timesheet1"></div>
+                    <div id="timesheet2"></div>
+                    <div id="timesheet3"></div>
+                    <div id="timesheet4"></div>
+                </div>
+                <div class="display-block-max-width-850">
                     <h2 class="horizontal-text-align">Упс, ваш экран слишком маленький...</h2>
                     <p class="horizontal-text-align">
                         Чтобы увидеть весь контент страницы, пересядьте за чуть больший экран
                     </p>
-                </div>
-                <div class="grid-container display-hidden-max-width-890">
-                    <div class="Heading header-cell">Характеристики лучших макак</div>
-
-                    <div class="heading1 header-cell">Характеристика</div>
-                    <div class="heading2 header-cell">Макаки</div>
-
-                    <div class="makaka1 header-cell">Титькин Даниил</div>
-                    <div class="makaka2 header-cell">Иванов Сергей</div>
-                    <div class="makaka3 header-cell">Иванов Алексей</div>
-
-                    <div class="odd-Cell1 common-cell">Порода</div>
-                    <div class="odd-cell12 common-cell">Японский макак</div>
-                    <div class="odd-cell13 common-cell">Черный тамарин</div>
-                    <div class="odd-cell14 common-cell">Гиббон</div>
-
-                    <div class="even-Cell12 common-cell">Пол</div>
-                    <div class="even-Cell common-cell">мужской</div>
-
-                    <div class="odd-Cell13 common-cell">Рост (см)</div>
-                    <div class="odd-cell23 common-cell">186</div>
-                    <div class="odd-cell33 common-cell">180</div>
-                    <div class="odd-cell43 common-cell">186</div>
-
-                    <div class="even-Cell14 common-cell">Вес (кг)</div>
-                    <div class="even-cell24 common-cell">68</div>
-                    <div class="even-cell34 common-cell">72</div>
-                    <div class="even-cell44 common-cell">70</div>
-
-                    <div class="odd-Cell15 common-cell">Цвет шерсти</div>
-                    <div class="odd-cell25 common-cell">русый</div>
-                    <div class="odd-cell35 common-cell">чёрный</div>
-                    <div class="odd-cell45 common-cell">белобрысый</div>
                 </div>
             </section>
 
@@ -123,6 +98,46 @@
         </span>
     </footer>
 </div>
-<script src="js/navigation.js"></script>
+
+<script>
+    new Timesheet('timesheet1', 2020, 2024,
+        [
+            ['09/2020', '05/2021', 'Дискретка', 'lorem'],
+            ['09/2020', '05/2021', 'Алгосы', 'ipsum'],
+            ['09/2020', '05/2021', 'Линал', 'dolor'],
+            ['09/2020', '12/2021', 'Матан', 'default'],
+            ['09/2020', '12/2020', 'ЦК', 'sit'],
+            ['09/2020', '05/2022', 'Английский', 'lorem'],
+            ['09/2020', '05/2021', 'Прога', 'ipsum'],
+            ['09/2020', '05/2024', 'Физра', 'dolor'],
+            ['09/2020', '12/2020', 'ЭВМ', 'default'],
+            ['02/2021', '05/2022', 'Физика', 'sit']
+        ]);
+    new Timesheet('timesheet2', 2021, 2021,
+        [
+            ['09/2021', '12/2021', 'Оси', 'lorem'],
+            ['09/2021', '12/2021', 'Теорвер', 'ipsum'],
+            ['09/2021', '12/2021', 'ООП', 'dolor'],
+            ['09/2021', '12/2021', 'История', 'default'],
+            ['09/2021', '12/2021', 'БЖД', 'sit'],
+            ['09/2021', '12/2021', 'ОГНП', 'lorem']
+        ]);
+    new Timesheet('timesheet3', 2021, 2022,
+        [
+            ['02/2021', '12/2022', 'Примат', 'ipsum'],
+            ['02/2022', '05/2022', 'Элтех', 'dolor'],
+            ['02/2022', '05/2022', 'БД', 'default'],
+            ['02/2022', '05/2022', 'Матстат', 'sit'],
+            ['02/2022', '05/2022', 'Java', 'lorem'],
+        ]);
+    new Timesheet('timesheet4', 2022, 2023,
+        [
+            ['09/2022', '12/2022', 'ML', 'ipsum'],
+            ['09/2022', '05/2023', 'Английский в проф деятельности', 'dolor'],
+            ['09/2022', '12/2022', 'Администрирование OC Windows Server', 'default'],
+            ['09/2022', '12/2022', 'Графика', 'sit'],
+            ['09/2022', '05/2023', 'Web', 'lorem']
+        ]);
+</script>
 </body>
 </html>
