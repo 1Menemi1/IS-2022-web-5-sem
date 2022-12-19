@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/page-load-time.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/highlight-active-page.js"></script>
 </head>
 
 <body>
@@ -22,7 +25,6 @@
                                       alt="Аватарка"></a>
             <div class="header-text-block">
                 <h1><a href="index.html">MAKAKINO</a></h1>
-                <h2>HTML-навыки</h2>
             </div>
             <div>
                 <a onclick="myFunction()" href="authorization.html" class="display-hidden-max-width-890"><img
@@ -32,6 +34,7 @@
 
         <main class="main-menu-container main-menu-max-width-1200">
             <section class="content-menu">
+                <span id="load-time"></span>
                 <h3>Лучшие хозяева макак:</h3>
                 <ol>
                     <li>Андреев Николай</li>
@@ -85,15 +88,29 @@ int main()
                     Daniil</p>
             </section>
 
+            <nav id="navigation-bar" class="navigation-menu">
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="first-lab.html">Lab-1</a></li>
+                    <li><a href="second-lab.html">Lab-2</a></li>
+                    <li><a href="third-lab.html">Lab-3</a></li>
+                    <li><a href="meeting-place-map.html">Карта</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                    <li><a href="feedback.html">Фидбек</a></li>
+                </ul>
+            </nav>
+
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Навигация</button>
                 <div id="myDropdown" class="dropdown-content">
                     <ul>
-                        <li><a href="second-lab.html">Картинки и шрифты</a></li>
-                        <li><a href="third-lab.html">Характеристика макак</a></li>
-                        <li><a href="meeting-place-map.html">Карта парков для встреч</a></li>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="first-lab.html">Lab-1</a></li>
+                        <li><a href="second-lab.html">Lab-2</a></li>
+                        <li><a href="third-lab.html">Lab-3</a></li>
+                        <li><a href="meeting-place-map.html">Карта</a></li>
                         <li><a href="forum.html">Форум</a></li>
-                        <li><a href="feedback.html">Обратная связь</a></li>
+                        <li><a href="feedback.html">Фидбек</a></li>
                     </ul>
                 </div>
             </div>

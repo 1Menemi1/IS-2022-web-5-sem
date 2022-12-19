@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/page-load-time.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/highlight-active-page.js"></script>
 </head>
 
 <body>
@@ -25,7 +28,6 @@
                                       alt="Аватарка"></a>
             <div class="header-text-block">
                 <h1><a href="index.html">MAKAKINO</a></h1>
-                <h2>Картинки и шрифты</h2>
             </div>
             <div>
                 <a onclick="myFunction()" href="authorization.html" class="display-hidden-max-width-890"><img
@@ -35,6 +37,7 @@
 
         <main class="main-menu-container main-menu-max-width-1200">
             <section class="content-menu">
+                <span id="load-time"></span>
                 <h3>Картинка с использованием фильтра drop-shadow:</h3>
                 <img class="picture-with-drop-shadow-filter" src="pictures/text-4-testing-fonts.png" alt="Мем">
 
@@ -144,15 +147,29 @@
                 </ol>
             </section>
 
+            <nav id="navigation-bar" class="navigation-menu">
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="first-lab.html">Lab-1</a></li>
+                    <li><a href="second-lab.html">Lab-2</a></li>
+                    <li><a href="third-lab.html">Lab-3</a></li>
+                    <li><a href="meeting-place-map.html">Карта</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                    <li><a href="feedback.html">Фидбек</a></li>
+                </ul>
+            </nav>
+
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Навигация</button>
                 <div id="myDropdown" class="dropdown-content">
                     <ul>
-                        <li><a href="first-lab.html">HTML-навыки</a></li>
-                        <li><a href="third-lab.html">Характеристика макак</a></li>
-                        <li><a href="meeting-place-map.html">Карта парков для встреч</a></li>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="first-lab.html">Lab-1</a></li>
+                        <li><a href="second-lab.html">Lab-2</a></li>
+                        <li><a href="third-lab.html">Lab-3</a></li>
+                        <li><a href="meeting-place-map.html">Карта</a></li>
                         <li><a href="forum.html">Форум</a></li>
-                        <li><a href="feedback.html">Обратная связь</a></li>
+                        <li><a href="feedback.html">Фидбек</a></li>
                     </ul>
                 </div>
             </div>

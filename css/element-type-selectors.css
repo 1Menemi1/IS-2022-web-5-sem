@@ -108,3 +108,44 @@ blockquote p {
 footer a {
     text-decoration: none;
 }
+
+nav,
+aside {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+
+nav ul,
+aside ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li,
+aside ul li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+nav ul li a,
+aside ul li a {
+    border-radius: 20px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+}
+
+nav ul li a:hover,
+aside ul li a:hover {
+    background-color: rgba(239, 130, 44, 1);
+}
